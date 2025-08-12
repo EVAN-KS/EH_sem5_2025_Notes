@@ -5,13 +5,13 @@
 
 ---
 
-## 📝 Introduction
+## Introduction
 
 This document outlines the process of creating a file and assigning it specific permissions using **octal notation** in a Linux operating system. The objective is to create a file and set its permissions to the octal value `751`, demonstrating a clear understanding of file access control for the owner, group, and others.
 
 ---
 
-## 🔧 Methodology
+##  Methodology
 
 The process involves three main steps: creating the file, setting the permissions, and verifying the result.
 
@@ -53,7 +53,7 @@ The file is created and permission is set using numbers (751).
 
 ---
 
-📌 Findings & Conclusion
+## Findings & Conclusion
 The file myfile.txt was created successfully.
 
 Permissions 751 were correctly applied.
@@ -64,7 +64,7 @@ This permission scheme is ideal when all users must be able to run a file, but o
 
 ---
 
-💻 Code Submission
+## Code Submission
 Here is the complete script for the operations:
 
 
@@ -81,7 +81,7 @@ ls -l myfile.txt
 
 
 
-## 📝 Notes: Octal Notation in File Permissions
+## Notes: Octal Notation in File Permissions
 
 In Linux, file permissions are controlled using **octal notation**, a shorthand based on the **base-8 number system (0–7)**. This notation makes it easier to represent read (`r`), write (`w`), and execute (`x`) permissions for:
 
@@ -109,7 +109,7 @@ You add the values to get the octal digit:
 
 ---
 
-### 🔧 Example: `chmod 751 myfile.txt`
+###  Example: `chmod 751 myfile.txt`
 
 This sets permissions as:
 
@@ -135,5 +135,7 @@ You’ll see:
 
 This **octal format** helps administrators manage file access clearly and securely.
 
+---
 
-
+## Conclusion
+This assignment demonstrated how to create a file and set permissions using octal notation in Linux. By applying chmod 751, we ensured that the file owner has full control (read, write, execute), the group can only read and execute, and others can execute only. The verification step using ls -l confirmed that the permissions were applied correctly. This approach is efficient, secure, and provides a clear, numeric method for managing file access, making it particularly useful for situations where precise control over file usage is required.
